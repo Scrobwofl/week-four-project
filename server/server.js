@@ -6,7 +6,11 @@ const PORT = "6060";
 const app = express();
 const db = new Database("database.db");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://scrobwofl.github.io",
+  })
+);
 app.use(express.json());
 
 // Root route
