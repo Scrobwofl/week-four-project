@@ -69,11 +69,11 @@ header > h1 {
   width: auto;
 }
 
-#posts-container > h3 {
+#posts-container > div > h3 {
   font-size: 1.2rem;
   padding: 0.5em;
 }
-#posts-container > p {
+#posts-container > div > p {
   font-size: 0.9rem;
   padding: 0.5em;
 }
