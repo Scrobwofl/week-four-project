@@ -56,9 +56,12 @@ header > h1 {
 }
 
 #posts-container {
-  display: grid;
+  display: flex;
   flex-direction: column-reverse;
   grid-area: postsFeed;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: scroll;
 }
 
 #posts-container > div {

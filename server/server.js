@@ -6,11 +6,10 @@ import Database from "better-sqlite3";
 const app = express();
 const db = new Database("database.db");
 
-const CLIENT_ORIGIN = process.env.API_URL;
-const PORT = process.env.PORT || 6060;
+const PORT = 6060;
 
 const corsOptions = {
-  origin: process.env.CLIENT_ORIGIN || "http://localhost:6060",
+  origin: process.env.CLIENT_ORIGIN,
 };
 app.use(cors(corsOptions));
 

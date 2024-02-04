@@ -1,5 +1,6 @@
 const form = document.getElementById("form");
-const baseURL = `https://mytechatwallapi.onrender.com/`;
+// const baseURL = `https://mytechatwallapi.onrender.com/`;
+const baseURL = `http://localhost:6060`;
 
 // Generic function to fetch posts
 async function fetchPosts() {
