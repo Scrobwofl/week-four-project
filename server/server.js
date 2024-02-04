@@ -3,16 +3,16 @@ import express from "express";
 import cors from "cors";
 import Database from "better-sqlite3";
 
-const PORT = "6060";
+const PORT = process.env.PORT || 6060;
 const app = express();
 const db = new Database("database.db");
 const CLIENT_ORIGIN = process.env.API_URL;
 
-app.use(
-  cors({
-    origin: `${CLIENT_ORIGIN}`,
-  })
-);
+const corsOptions = {
+  origin: process.env.CLIENT_ORIGIN || "http://localhost:3000",
+};
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // Root route
