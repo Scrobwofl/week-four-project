@@ -9,6 +9,7 @@ const db = new Database("database.db");
 app.use(
   cors({
     origin: "https://scrobwofl.github.io",
+    // origin: "https://localhost",
   })
 );
 app.use(express.json());

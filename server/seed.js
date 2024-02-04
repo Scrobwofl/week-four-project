@@ -14,6 +14,7 @@ const insertStatement = db.prepare(
   `INSERT INTO posts (username, message) VALUES (?,?)`
 );
 
-insertStatement.run("Crash Test Mike", "Ouch.");
-insertStatement.run("Crash Test Geoff", "I'm in considerable pain.");
-insertStatement.run("Crash Test Gary", "This can't be good.");
+insertStatement.run(
+  "Site Dev",
+  "Leave a message on the wall for your fellow Tech Educators 008 course mates"
+);
