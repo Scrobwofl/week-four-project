@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 import express from "express";
 import cors from "cors";
 import Database from "better-sqlite3";
@@ -5,10 +7,11 @@ import Database from "better-sqlite3";
 const PORT = "6060";
 const app = express();
 const db = new Database("database.db");
+const CLIENT_ORIGIN = process.env.API_URL;
 
 app.use(
   cors({
-    origin: "https://mytechatwallsite.onrender.com",
+    origin: `${CLIENT_ORIGIN}`,
   })
 );
 app.use(express.json());
