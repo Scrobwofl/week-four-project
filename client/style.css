@@ -10,8 +10,8 @@
 #app {
   display: grid;
   justify-content: space-between;
-  justify-items: stretch;
-  align-items: stretch;
+  justify-items: center;
+  align-items: start;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr 1fr 8fr;
   grid-template-areas:
@@ -76,13 +76,14 @@ header > h1 {
   font-size: 1.2rem;
   padding: 0.5em;
 }
+
 #posts-container > div > p {
   font-size: 0.9rem;
   padding: 0.5em;
 }
 
 @media (min-width: 700px) {
-  body {
+  #app {
     max-width: 700px;
   }
 }
