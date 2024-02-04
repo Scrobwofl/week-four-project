@@ -60,7 +60,7 @@ header > h1 {
   flex-direction: column-reverse;
   grid-area: postsFeed;
   align-items: stretch;
-  justify-content: flex-start;
+  justify-content: flex-end;
   overflow: scroll;
 }
 
