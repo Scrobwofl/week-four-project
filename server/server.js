@@ -8,7 +8,7 @@ const db = new Database("database.db");
 
 app.use(
   cors({
-    origin: "https://mytechatwallsite.onrender.com/",
+    origin: "https://mytechatwallsite.onrender.com",
   })
 );
 app.use(express.json());
